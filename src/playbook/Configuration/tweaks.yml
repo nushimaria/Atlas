@@ -25,7 +25,7 @@ actions:
   # -----------------------------------------------------
   - !writeStatus: {status: 'Running networking tweaks'}
   # Needed for compatibility
-  # - !task: {path: 'tweaks\networking\disable-llmnr.yml'}
+  - !task: {path: 'tweaks\networking\disable-llmnr.yml'}
   - !task: {path: 'tweaks\networking\atlas-network-settings.yml'}
 
   # -------------------------------------------------------------------------- #
@@ -48,7 +48,7 @@ actions:
   - !writeStatus: {status: 'Running performance tweaks'}
   - !task: {path: 'tweaks\performance\config-mmcss.yml'}
   - !task: {path: 'tweaks\performance\disable-auto-folder-discovery.yml'}
-  # - !task: {path: 'tweaks\performance\disable-game-bar.yml'}
+  - !task: {path: 'tweaks\performance\disable-game-bar.yml'}
   - !task: {path: 'tweaks\performance\config-automatic-maintenance.yml'}
   - !task: {path: 'tweaks\performance\disable-background-apps.yml'}
   - !task: {path: 'tweaks\performance\disable-fth.yml'}
@@ -267,9 +267,9 @@ actions:
   # -------------------------------------------------------------------------- #
   - !task: {path: 'tweaks\qol\startup-shutdown\decrease-shutdown-time.yml'}
   - !task: {path: 'tweaks\qol\startup-shutdown\disable-startup-delay.yml'}
-  # - !task: {path: 'tweaks\qol\startup-shutdown\force-end-shutdown-apps.yml'}
+  - !task: {path: 'tweaks\qol\startup-shutdown\force-end-shutdown-apps.yml'}
     # It confused people
-  # - !task: {path: 'tweaks\qol\startup-shutdown\enable-verbose-messages.yml'}
+  - !task: {path: 'tweaks\qol\startup-shutdown\enable-verbose-messages.yml'}
 
   # -------------------------------------------------------------------------- #
   #  qol\system                                                                #
@@ -280,7 +280,7 @@ actions:
   # -------------------------------------------------------------------------- #
   #  qol\taskbar                                                               #
   # -------------------------------------------------------------------------- #
-  - !task: {path: 'tweaks\qol\taskbar\cmd-win-x.yml'}
+  # - !task: {path: 'tweaks\qol\taskbar\cmd-win-x.yml'}
   - !task: {path: 'tweaks\qol\taskbar\disable-cloud-optimized-content.yml'}
   - !task: {path: 'tweaks\qol\taskbar\disable-desktop-peek.yml'}
   - !task: {path: 'tweaks\qol\taskbar\disable-news-and-interests.yml'}
